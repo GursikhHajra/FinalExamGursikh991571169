@@ -7,12 +7,12 @@ import sheridancollege.prog39402.gursikh991571169.databinding.ActivityMainBindin
 
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        @Suppress("UNUSED_VARIABLE")
-        val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        //(activity as AppCompatActivity).supportActionBar?.title = "Home Page"
     }
 }
